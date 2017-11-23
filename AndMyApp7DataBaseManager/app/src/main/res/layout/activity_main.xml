@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin_5dp"
+    android:background="#220000FF">
+
+    <Button
+        android:id="@+id/btnInterMemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save_internal_memory"
+        android:background="@color/btn1_bckgrnd"
+        android:textColor="@color/btn1_text_color"
+        android:layout_margin="@dimen/margin_5dp"/>
+
+    <Button
+        android:id="@+id/btnExternMemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnInterMemo"
+        android:text="@string/save_external_memory"
+        android:background="@color/btn1_bckgrnd"
+        android:textColor="@color/btn1_text_color"
+        android:layout_margin="@dimen/margin_5dp"/>
+
+    <Button
+        android:id="@+id/btnDb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnExternMemo"
+        android:text="@string/create_db"
+        android:background="@color/btn1_bckgrnd"
+        android:textColor="@color/btn1_text_color"
+        android:layout_margin="@dimen/margin_5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:hint="@string/edittext_hint"
+            android:layout_marginRight="@dimen/margin_5dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/OK"
+            android:textSize="22sp"
+            android:textColor="@color/txt_button_ok"
+            android:background="#4400DD00"/>
+
+    </LinearLayout>
+</RelativeLayout>
+
+

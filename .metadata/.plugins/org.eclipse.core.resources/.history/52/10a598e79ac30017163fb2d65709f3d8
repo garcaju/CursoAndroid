@@ -1,0 +1,28 @@
+import java.util.*;
+		import java.lang.*;
+		import java.io.*;
+		
+public class Main {
+
+	public static void main(String[] args) {
+		
+		  int number1 = 6;
+		  int number2 = 8;
+		  int sum = number1 + number2;
+		  int dif = number1 - number2;
+		  int mul = number1 * number2;
+		  int quot = number1 / number2;
+		  int rem = number1 % number2;
+		  
+		  System.out.println("number1 is : " + number1);
+		  System.out.println("number2 is: " + number2);
+		  System.out.println("Sum is: " + sum);
+		  System.out.println("Difference is : " + dif);
+		  System.out.println("Multiplied value is : " + mul);
+		  System.out.println("Quotient is : " + quot);
+		  System.out.println("Remainder is : " + rem);
+		
+		
+	}
+
+}

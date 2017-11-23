@@ -1,0 +1,26 @@
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner reader = new Scanner(System.in);
+		System.out.print("Escribe un numero en el que estoy pensando del 1 al 10: ");
+		int input = reader.nextInt();
+		Logic num = new Logic(input);
+		int i = 1;
+
+		while (num.testGuessNumber(input) == false){
+			System.out.println("Nooopp!! Intentalo de nuevo!: ");
+			input= reader.nextInt();
+			i++;
+			num.testGuessNumber(input);
+		}
+		
+		System.out.println("Felicidades, los has adivinado!! has necesitado: " + i + "intentos");
+		}
+}
+
+

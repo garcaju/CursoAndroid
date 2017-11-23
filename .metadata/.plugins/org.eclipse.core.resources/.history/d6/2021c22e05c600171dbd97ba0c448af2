@@ -1,0 +1,49 @@
+package com.juan.herencia.animales;
+import com.juan.herencia.tratamiento.*;
+
+import java.util.List;
+
+public class Gato extends Animal {
+
+	private float largoBigotes;
+	private int vidas;
+	private List<Vacunas> vacunas;
+	
+	public Gato(int patas, boolean vuela, String especie, 			/*Constructor*/	
+				int vidas, List<Vacunas> vacunas, float largoBigotes ) 
+	{
+		super(patas, vuela, especie);
+		this.vidas = vidas;
+		this.largoBigotes = largoBigotes;
+		this.vacunas = vacunas;
+	}
+
+	public float getLargoBigotes() {
+		return largoBigotes;
+	}
+
+	public void setLargoBigotes(float largoBigotes) {
+		this.largoBigotes = largoBigotes;
+	}
+
+	public int getVidas() {
+		return vidas;
+	}
+
+	public void setVidas(int vidas) {
+		this.vidas = vidas;
+	}
+
+	public List<Vacunas> getVacunas() {
+		return vacunas;
+	}
+
+	public void setVacunas(List<Vacunas> vacunas) {
+		this.vacunas = vacunas;
+	}
+	
+	
+
+	
+	
+}

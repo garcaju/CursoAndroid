@@ -1,0 +1,5 @@
+package com.juan.herencia.animales;
+
+public class Gato {
+
+}

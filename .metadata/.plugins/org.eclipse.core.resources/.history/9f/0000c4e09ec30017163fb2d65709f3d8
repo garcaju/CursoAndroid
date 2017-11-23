@@ -1,0 +1,52 @@
+
+public class Coche {
+	
+	private String color;
+	private String brand;
+	private int topSpeed;
+	private String type;
+
+	public Coche (String color, String brand, int topSpeed, String type){//Constructor
+		this.color = color;
+		this.brand = brand;
+		this.topSpeed = topSpeed;
+		this.type = type;
+	}
+	
+	public void sayColor(){
+		System.out.println("El coche es de color: " + color);
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+	
+	public String getBrand() {
+		return brand;
+	}
+
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+	public int getTopSpeed() {
+		return topSpeed;
+	}
+
+	public void setTopSpeed(int topSpeed) {
+		this.topSpeed = topSpeed;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+	
+}

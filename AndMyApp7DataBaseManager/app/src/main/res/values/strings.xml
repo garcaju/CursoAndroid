@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndMyApp7DataBaseManager</string>
+    <string name="edittext_hint">Escribe aquí</string>
+    <string name="OK">OK</string>
+    <string name="save_internal_memory">save internal memory</string>
+    <string name="save_external_memory">save external memory</string>
+    <string name="create_db">create DB</string>
+</resources>

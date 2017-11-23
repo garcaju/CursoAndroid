@@ -1,0 +1,22 @@
+import java.util.Random;
+
+public class Logic {
+
+	int numberEnigma;
+	Random numberRandom = new Random();
+	int top = 10;
+
+	public Logic (){
+		this.numberEnigma = numberRandom.nextInt(top);
+	}
+
+	public boolean testGuessNumber(int valor){
+
+		if (valor < this.numberEnigma){
+			return  false;
+		}else if (valor > this.numberEnigma){
+			return false;
+		}
+		return true;
+	}
+}

@@ -1,0 +1,59 @@
+package com.juan.herencia.animales;
+
+import com.juan.herencia.animales.intefaces.Comestible;
+
+public class Animal{
+	
+	private int patas;
+	private final boolean vuela;
+	private int velocidad;
+	private float peso;
+	private String especie;
+	
+	public Animal(int patas, boolean vuela, String especie){
+		this.patas = patas;
+		this.vuela = vuela;
+		this.especie = especie;
+	}
+	
+	public Animal(int patas, boolean vuela, String especie, float peso){
+		this.patas = patas;
+		this.vuela = vuela;
+		this.especie = especie;
+		this.peso = peso;
+	}
+	
+	public void comer(Comestible bocado){
+		System.out.println("Me estoy comiendo a" + bocado.toString());
+	}
+	
+	public int getPatas() {
+		return patas;
+	}
+	public void setPatas(int patas) {
+		this.patas = patas;
+	}
+	public boolean isVuela() {
+		return vuela;
+	}
+	public int getVelocidad() {
+		return velocidad;
+	}
+	public void setVelocidad(int velocidad) {
+		this.velocidad = velocidad;
+	}
+	public float getPeso() {
+		return peso;
+	}
+	public void setPeso(float peso) {
+		this.peso = peso;
+	}
+	public String getEspecie() {
+		return especie;
+	}
+	public void setEspecie(String especie) {
+		this.especie = especie;
+	}
+	
+	
+}

@@ -1,0 +1,18 @@
+package com.juan.herencia;
+
+import com.juan.herencia.animales.Gallina;
+import com.juan.herencia.animales.Gato;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Gato misino = new Gato (4, false, "misino", 7, null, 800);
+		
+		Gallina pitas = new Gallina (2, true, "Ponedora", 1500, 1, null);
+		
+		misino.comer(pitas);
+
+	}
+
+}

@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Edad {
+
+	public static void main(String[] args) {
+		Scanner reader = new Scanner(System.in);
+		System.out.print("Introduce tu edad: ");
+		int age = reader.nextInt();
+		
+		ObjectEdad usuario = new ObjectEdad(age);
+		usuario.printEdad();
+	}
+
+}

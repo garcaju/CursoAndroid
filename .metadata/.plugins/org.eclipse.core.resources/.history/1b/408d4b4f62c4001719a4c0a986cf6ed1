@@ -1,0 +1,31 @@
+
+public class ObjectEdad {
+
+	public int edad;
+
+	public ObjectEdad (int edad){
+		this.edad = edad;
+	}
+
+	public void printEdad (){
+		switch(this.edad){
+
+		case 0:	case 1:	case 2: case 3:	case 4:	case 5:	case 6:	case 7: case 8:	case 9:	case 10:
+			System.out.println("Estas entre los 0 y 10 años");
+			break;
+
+		case 11: case 12: case 13: case 14:	case 15: case 16: case 17: case 18: case 19: case 20: 
+			System.out.println("Estas entre los 10 y 20 años");
+			break;
+
+		case 21: case 22: case 23: case 24:	case 25: case 26: case 27: case 28: case 29: case 30: 
+			System.out.println("Estas entre los 20 y 30 años");
+			break;
+
+		default:
+			System.out.println("Eres mayor de 30 años");
+		}
+
+	}
+
+}

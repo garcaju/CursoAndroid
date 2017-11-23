@@ -1,0 +1,63 @@
+package com.juan.herencia.animales;
+
+import java.util.List;
+
+import com.juan.herencia.animales.intefaces.Comestible;
+import com.juan.herencia.tratamiento.Vacunas;
+
+public class Gallina extends Animal implements Comestible{
+
+	private int inteligenciaNegativa;
+	private int numHuevos;
+	private List<Vacunas> vacunas;
+	
+	public Gallina(int patas, boolean vuela, String especie, float peso, 			/*Constructor*/	
+				int vidas, List<Vacunas> vacunas ) 
+	{
+		super(patas, vuela, especie, peso);
+		this.inteligenciaNegativa = inteligenciaNegativa;
+		this.numHuevos = numHuevos;
+		this.vacunas = vacunas;
+	}
+	
+	
+
+	@Override
+	public String toString() {
+		return "" + this.getEspecie();
+	}
+
+
+
+	public int getInteligenciaNegativa() {
+		return inteligenciaNegativa;
+	}
+
+	public void setInteligenciaNegativa(int inteligenciaNegativa) {
+		this.inteligenciaNegativa = inteligenciaNegativa;
+	}
+
+	public int getNumHuevos() {
+		return numHuevos;
+	}
+
+	public void setNumHuevos(int numHuevos) {
+		this.numHuevos = numHuevos;
+	}
+
+	public List<Vacunas> getVacunas() {
+		return vacunas;
+	}
+
+	public void setVacunas(List<Vacunas> vacunas) {
+		this.vacunas = vacunas;
+	}
+
+	@Override
+	public void sayIsCooked() {
+		
+	}
+
+	
+	
+}

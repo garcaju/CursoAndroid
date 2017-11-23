@@ -1,0 +1,24 @@
+
+public class Modelo {
+
+		public int valor;
+		public int limite = 11;
+		
+		public Modelo (int valor){
+			this.valor = valor;
+		}
+		
+		public String toString(int valor){
+			return "" + valor;
+		}
+		
+		public int[] getTabla(){
+			int i = 1;
+			int result[] = new int [11];
+			
+			for (i = 0; i <  this.limite; i++){
+				result[i] = i*valor;  				
+			}
+			return result;		
+		}
+}

@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Vista {
+
+	public static void main(String[] args) {
+
+		Scanner reader = new Scanner(System.in);
+
+		System.out.print("Escriba la tabla de multiplicar que desea ver calculada: ");
+		int tabla = reader.nextInt();
+		int i= 0;
+		Modelo num = new Modelo(tabla);
+
+		/*for(int valor : num.getTabla()){ //Calculado por Array simple
+			System.out.println(i + " x " + num.valor + " = " + valor);
+			i++;
+		}*/
+		
+		for(int valor : num.getByArrayList()){ //Calculado por ArrayList
+			System.out.println(i + " x " + num.valor + " = " + valor);
+			i++;
+		}
+		
+	}
+}

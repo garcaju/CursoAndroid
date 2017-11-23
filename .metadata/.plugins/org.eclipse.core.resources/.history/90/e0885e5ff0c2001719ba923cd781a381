@@ -1,0 +1,11 @@
+package com.pruebaGit;
+
+public class PruebaGit {
+
+	public static void main(String[] args) {
+		System.out.println("Probando subida a Git...");
+		System.out.println("OK!!");
+
+	}
+
+}

@@ -1,0 +1,41 @@
+package enumerative;
+
+public class start {
+
+	public start() {
+		
+		Day x = FRIDAY ;  
+    
+		 switch (x) {
+	        case MONDAY:
+	            System.out.println("MONDAY");
+	            break;
+	        case THURSDAY:
+	            System.out.println("THURSDAY.");
+	            break;
+	        case WEDNESDAY:
+	            System.out.println("WEDNESDAY");
+	            break;
+	        case TUESDAY:
+	            System.out.println("TUESDAY");
+	            break;	               
+	        case FRIDAY:
+	            System.out.println("FRIDAY");
+	            break;
+	                     
+	        case SATURDAY: case SUNDAY:
+	            System.out.println("Weekends are best.");
+	            break;
+	                    
+	        default:
+	            System.out.println("Midweek days are so-so.");
+	            break;
+	    }
+		 
+	}
+
+}
+
+ 
+
+    

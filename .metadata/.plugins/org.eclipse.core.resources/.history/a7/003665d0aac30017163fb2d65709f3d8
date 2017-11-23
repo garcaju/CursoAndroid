@@ -1,0 +1,17 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+		
+public class Main {
+
+	public static void main(String[] args) {
+		
+		  Coche miCoche = new Coche("rojo", "Seat", 195, "Turismo");
+		  Coche suCoche = new Coche("gris", "Ford", 180, "Monovolúmen");
+		
+		  miCoche.sayColor();
+		  suCoche.sayColor("azul");
+		
+	}
+
+}

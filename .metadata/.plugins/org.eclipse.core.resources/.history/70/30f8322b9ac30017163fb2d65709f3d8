@@ -1,0 +1,13 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int age = 35;
+		System.out.println("Tienes " + age + " años");
+
+		age += 1;
+		System.out.println("Y ahora tienes " + age + " años");
+	}
+
+}

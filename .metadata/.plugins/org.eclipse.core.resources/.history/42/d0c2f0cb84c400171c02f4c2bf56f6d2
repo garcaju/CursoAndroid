@@ -1,0 +1,14 @@
+package Interface;
+
+
+public class Cat implements Animal  {
+
+	private String name;
+	
+	public String PlaySoundxxxx () {
+		return "Meow Meow";
+		
+		
+	}
+	
+}
