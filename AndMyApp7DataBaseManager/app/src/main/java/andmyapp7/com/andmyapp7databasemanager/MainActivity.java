@@ -1,10 +1,13 @@
 package andmyapp7.com.andmyapp7databasemanager;
 
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import java.io.FileNotFoundException;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -44,10 +47,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btnExternMemo:
                     String texto = txtText.getText().toString();
+                try {
                     fileUtils.saveExternalMemory(this, texto);
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                }
                 break;
             case R.id.btnDb:
-                //TODO guardar DB
+                MyDataBase db = new MyDataBase(this);
+                SQLiteDatabase sqLiteDatabase = db.getReadableDatabase();
                 break;
         }
     }
