@@ -35,15 +35,16 @@ public class FileUtils {
 
         //File = path memoria externa + mi directorio
         File myExternalFolder =
-                new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
-                        , ConstantUtils.EXTERNAL_MEMORY_DIRECTORY);
+                new File(context.getExternalFilesDir(null), "newDirectory/newSubDirectory");
         //Consulta si directiorio ya existe
         //false --> crea directorio
         if (myExternalFolder.exists() == false) {
             myExternalFolder.mkdir();
+            Log.i(FileUtils.class.getSimpleName(), "-> Path = " + myExternalFolder.mkdirs());
+
         }
         Log.i(FileUtils.class.getSimpleName(), "-> Path = " + myExternalFolder.getAbsolutePath());
-        File myFile = new File(myExternalFolder.getAbsolutePath() + "/" + ConstantUtils.EXTERNAL_MEMORY_DIRECTORY);
+        File myFile = new File(myExternalFolder.getAbsolutePath() + "/" + ConstantUtils.EXTERNAL_MEMORY_FILE);
         FileOutputStream fileOutputStream = new FileOutputStream(myFile.getAbsolutePath().toString());
         try {
             fileOutputStream.write(textoAGuardar.getBytes());

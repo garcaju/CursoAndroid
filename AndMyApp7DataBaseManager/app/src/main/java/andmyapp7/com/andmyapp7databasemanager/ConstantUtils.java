@@ -10,12 +10,21 @@ public class ConstantUtils {
     public static final String EXTERNAL_MEMORY_DIRECTORY = "NewDirectory/Subdirectory";
     public static final String MY_DATA_BASE = "MyDataBase";
     public static final int MY_DATA_VERSION = 1;
+
+    public static final String PASSPORT_TABLE_NAME = "Passport";
+    public static final String COLUMN_NAME = "Nombre";
+    public static final String COLUMN_APELLIDOS = "Apellidos";
+    public static final String COLUMN_FOTO = "Foto";
+    public static final String COLUMN_SPINNER_SELECTION = "SpinnerSelection";
+    public static final String COLUMN_CHECKBOX = "CheckBoxState";
+    
     public static final String MY_DATA_BASE_CREATE_TABLE =
-            "CREATE TABLE Passport " +
+            "CREATE TABLE " + PASSPORT_TABLE_NAME +
                     "(_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL," +
-                    "Nombre TEXT," +
-                    "Apellidos TEXT," +
-                    "Foto TEXT," +
-                    "SpinnerSelection INTEGER," +
-                    "CheckBoxState INTEGER);"; //TODO NO existe boolean en SQLite
+                    COLUMN_NAME + "TEXT," +
+                    COLUMN_APELLIDOS + "TEXT," +
+                    COLUMN_FOTO + "TEXT," +
+                    COLUMN_SPINNER_SELECTION + "INTEGER," +
+                    COLUMN_CHECKBOX + "INTEGER);"; //TODO NO existe boolean en SQLite
+
 }

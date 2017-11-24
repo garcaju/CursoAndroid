@@ -56,7 +56,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnDb:
                 MyDataBase db = new MyDataBase(this);
                 SQLiteDatabase sqLiteDatabase = db.getReadableDatabase();
+
                 break;
+
         }
     }
 }
