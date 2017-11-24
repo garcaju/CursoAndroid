@@ -2,37 +2,47 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/margin_5dp"
-    android:background="#220000FF">
+    android:background="#220000FF"
+    android:padding="@dimen/margin_5dp">
 
     <Button
         android:id="@+id/btnInterMemo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/save_internal_memory"
+        android:layout_margin="@dimen/margin_5dp"
         android:background="@color/btn1_bckgrnd"
-        android:textColor="@color/btn1_text_color"
-        android:layout_margin="@dimen/margin_5dp"/>
+        android:text="@string/save_internal_memory"
+        android:textColor="@color/btn1_text_color" />
 
     <Button
         android:id="@+id/btnExternMemo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnInterMemo"
-        android:text="@string/save_external_memory"
+        android:layout_margin="@dimen/margin_5dp"
         android:background="@color/btn1_bckgrnd"
-        android:textColor="@color/btn1_text_color"
-        android:layout_margin="@dimen/margin_5dp"/>
+        android:text="@string/save_external_memory"
+        android:textColor="@color/btn1_text_color" />
 
     <Button
-        android:id="@+id/btnDb"
+        android:id="@+id/btnInsertDb"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnExternMemo"
-        android:text="@string/create_db"
+        android:layout_margin="@dimen/margin_5dp"
         android:background="@color/btn1_bckgrnd"
-        android:textColor="@color/btn1_text_color"
-        android:layout_margin="@dimen/margin_5dp"/>
+        android:text="@string/create_db"
+        android:textColor="@color/btn1_text_color" />
+
+    <Button
+        android:id="@+id/btnQueryDb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnInsertDb"
+        android:layout_margin="@dimen/margin_5dp"
+        android:background="@color/btn1_bckgrnd"
+        android:text="@string/create_query"
+        android:textColor="@color/btn1_text_color" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -45,9 +55,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginRight="@dimen/margin_5dp"
             android:layout_weight="4"
-            android:hint="@string/edittext_hint"
-            android:layout_marginRight="@dimen/margin_5dp"/>
+            android:hint="@string/edittext_hint" />
 
         <Button
             android:id="@+id/btnOk"
@@ -55,10 +65,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
+            android:background="#4400DD00"
             android:text="@string/OK"
-            android:textSize="22sp"
             android:textColor="@color/txt_button_ok"
-            android:background="#4400DD00"/>
+            android:textSize="22sp" />
 
     </LinearLayout>
 </RelativeLayout>

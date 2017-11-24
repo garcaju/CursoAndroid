@@ -5,4 +5,6 @@
     <string name="save_internal_memory">save internal memory</string>
     <string name="save_external_memory">save external memory</string>
     <string name="create_db">create DB</string>
+    <string name="createQuerydb">create_query</string>
+    <string name="create_query">CREATE QUERY</string>
 </resources>
